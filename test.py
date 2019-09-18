@@ -114,7 +114,7 @@ class AssessmentTestCases(unittest.TestCase):
 
         try:
             zip_elem = self.driver.find_element_by_id('billingPostalCode')
-        except NoSuchElementException:
+        except:
             zip_elem = None
 
         email_elem.send_keys("assessment@test.com.br")
